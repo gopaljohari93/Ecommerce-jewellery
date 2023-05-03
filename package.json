@@ -1,0 +1,19 @@
+{
+  "name": "sass",
+  "version": "1.0.0",
+  "description": "Learn Sass",
+  "main": "index.js",
+  "scripts": {
+    "compile-sass": "node-sass scss/style.scss css/style.css -w"
+  },
+  "keywords": [
+    "Sass",
+    "Learn",
+    "Sass"
+  ],
+  "author": "Gopal Johari",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  }
+}

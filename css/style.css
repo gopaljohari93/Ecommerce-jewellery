@@ -1,0 +1,447 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&isplay=swap");
+/*
+========================================
+   SASS implementation webpage Design
+========================================
+*/
+/* Variable sass */
+/* mixin sass */
+/* include sass */
+.wrapper {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-color: #333; }
+
+.text-content {
+  width: 60%;
+  margin: auto; }
+
+/*
+========================================
+   SASS implementation webpage Design
+========================================
+*/
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+:active,
+:hover,
+:focus {
+  outline: 0 !important;
+  outline-offset: 0; }
+
+a,
+a:hover {
+  text-decoration: none; }
+
+a:hover {
+  color: #ff553e; }
+
+ul,
+ol {
+  margin: 0;
+  padding: 0; }
+
+/* scrollbar */
+html {
+  scroll-behavior: smooth; }
+
+body {
+  font-size: 100%;
+  font-weight: 400;
+  font-family: 'Dosis', sans-serif; }
+
+/* Custom Scrollbar design css */
+::-webkit-scrollbar {
+  width: 0.3125rem; }
+
+::-webkit-scrollbar-track {
+  background-color: #fff; }
+
+/* background-color add scrollbar */
+::-webkit-scrollbar-track {
+  background-color: #ff553e; }
+
+/*
+=================================
+   Common Property CSS Design
+=================================
+*/
+h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  color: #fff; }
+
+h2 {
+  font-weight: 600;
+  font-size: 1.5625rem;
+  text-transform: capitalize;
+  color: #fff;
+  line-height: 2.5rem; }
+
+h4 {
+  font-weight: 400;
+  font-size: 1.125rem;
+  text-transform: capitalize;
+  color: #fff;
+  margin-bottom: 0.9375rem;
+  transition: all .3s linear; }
+
+h5 {
+  font-weight: 400;
+  font-size: 0.875rem;
+  text-transform: capitalize;
+  color: #fff;
+  margin-bottom: 10px; }
+
+p {
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 400;
+  line-height: 1.17rem;
+  letter-spacing: 0.0625rem;
+  opacity: 0.8; }
+
+/* btn design css*/
+.main-btn {
+  height: 40px;
+  line-height: 40px;
+  font-size: 1.125rem;
+  display: inline-block;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0 30px;
+  position: relative; }
+
+.main-btn::after,
+.main-btn::before {
+  position: absolute;
+  top: 50%;
+  background-color: rgba(255, 255, 255, 0.3);
+  left: 0;
+  width: 100%;
+  height: 1px;
+  content: "";
+  transition: all .5s ease-out 0s;
+  -webkit-transition: all .5s ease-out 0s;
+  transform: translateY(-20px);
+  -webkit-transform: translateY(-20px); }
+
+.main-btn::after {
+  transform: translateY(20px);
+  -webkit-transform: translateY(20px); }
+
+.main-btn:hover::before {
+  transform: rotate(20deg);
+  -webkit-transform: rotate(20deg);
+  background-color: #ff553e; }
+
+.main-btn:hover::after {
+  transform: rotate(-20deg);
+  -webkit-transform: rotate(-20deg);
+  background-color: #ff553e; }
+
+.main-btn:hover {
+  color: #ff553e; }
+
+/* btn design css*/
+/*
+=================================
+   Common Property CSS Design
+=================================
+*/
+/*
+=================================
+    Header Design
+=================================
+*/
+/* nesting sass */
+.top-header {
+  background-color: #333; }
+  .top-header span {
+    color: #fff;
+    font-size: 0.875rem;
+    letter-spacing: 0.1062rem; }
+
+/*
+=================================
+    Navbar Design
+=================================
+*/
+/* nesting sass */
+.navigation-wrap {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  z-index: 1000;
+  transition: all 0.3s ease-out; }
+  .navigation-wrap .nav-item {
+    padding: 0 0.5rem;
+    transition: all 200ms linear; }
+
+/* mobile menu icon outline css remove style */
+.navbar-toggler:focus {
+  outline: unset;
+  border: none;
+  box-shadow: none; }
+
+.navigation-wrap .nav-link {
+  padding: 0.9375rem;
+  font-size: 0.875rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.0625rem; }
+
+.navigation-wrap .nav-link:hover,
+.navigation-wrap .nav-link.active {
+  color: #ff553e; }
+
+/* Change  navbar styling onscroll position: fixed */
+.navigation-wrap.scrollon {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  box-shadow: 0 0.125rem 1.75rem rgba(0, 0, 0, 0.9);
+  transition: all 0.15s ease-out 0s;
+  background-color: #000; }
+
+.navigation-wrap.scrollon:hover,
+.navigation-wrap.scrollon.active {
+  color: #ff553e; }
+
+/*
+=================================
+    Top-banner Design
+=================================
+*/
+#home .carousel-caption {
+  top: 12rem; }
+
+/* paragraph size css style left remove fullsize */
+#home .carousel-caption p {
+  max-width: 36.25rem;
+  margin: 1.0625rem auto; }
+
+/*
+=================================
+   New arrivals section Design
+=================================
+*/
+.new-arrivals .banner-info {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  margin: auto;
+  z-index: 9;
+  padding: 0 15px; }
+
+.new-arrivals .card-banner:nth-child(2) h2,
+.new-arrivals .card-banner:nth-child(2) p,
+.new-arrivals .card-banner:nth-child(2) a {
+  color: #000; }
+
+/* second box color arrow change css */
+.new-arrivals .card-banner:nth-child(2) a::before,
+.new-arrivals .card-banner:nth-child(2) a::after {
+  background-color: #000; }
+
+.new-arrivals .card-banner .card-thumb,
+.products .item-product {
+  position: relative;
+  display: block;
+  overflow: hidden; }
+
+/* img zoom effect transition smooth create css style */
+.new-arrivals .card-banner .card-thumb img,
+.products .item-product img {
+  transition: all .5s ease-out 0s; }
+
+/* img zoom effect create css style */
+.new-arrivals .card-banner .card-thumb img:hover,
+.products .item-product img:hover {
+  transform: scale(1.2);
+  opacity: 0.6; }
+
+/*
+=================================
+   Product section Design
+=================================
+*/
+.products .wrapper {
+  background-color: #000; }
+
+.products .nav-tabs {
+  border: 0;
+  justify-content: center; }
+
+/* Tabs css btn code */
+.products .nav-tabs .nav-link {
+  Display: block;
+  padding: 0 30px;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  background-color: #000;
+  color: #fff;
+  height: 36px;
+  margin: 10px;
+  line-height: 34px;
+  text-transform: uppercase; }
+
+.products .product-info .cat-parent,
+.products .product-info .wishlist {
+  font-size: 0.875rem;
+  color: #fff;
+  opacity: 0.6;
+  text-transform: uppercase; }
+
+.products .product-title a {
+  margin: 0 0 7px;
+  display: block;
+  color: #fff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-transform: uppercase; }
+
+.products .rating i {
+  color: #f4d632; }
+
+.products .basket a {
+  color: #fff; }
+
+/*
+====================================
+  deal-off-the-day section Design
+====================================
+*/
+.deal-of-the-day {
+  background-image: url(../images/img/img-4-min.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+/*
+========================
+  blog section Design
+========================
+*/
+.blog-section {
+  background-color: #000; }
+
+/*
+========================
+ footer section Design
+========================
+*/
+footer {
+  background-color: #333; }
+
+footer .footer-social a i {
+  font-size: 1.5rem;
+  color: #fff;
+  padding: 0 1rem; }
+
+footer .footer-social a:hover i {
+  color: #ff553e; }
+
+/*
+======================================
+   Responsive Design Media Quries
+======================================
+*/
+/* ipad pro breakpoint */
+@media (max-width: 1024px) {
+  /* Common Property CSS Design */
+  h1 {
+    font-size: 3.25rem; }
+  h2 {
+    font-size: 1.125rem;
+    line-height: 1.5625rem; }
+  .wrapper {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem; } }
+
+/* ipad breakpoint */
+@media (max-width: 991px) {
+  /* Common Property CSS Design */
+  h1 {
+    font-size: 0.9375rem; }
+  h2 {
+    font-size: 0.875rem;
+    line-height: 1.3125rem; }
+  .text-content {
+    width: 100%; }
+  /* navbar brand css */
+  .navigation-wrap .navbar-brand img {
+    height: 2.8125rem; }
+  /* mobile menu icon color change css */
+  .navbar-toggler i {
+    color: #fff;
+    line-height: 2; }
+  .navigation-wrap {
+    text-align: right;
+    background-color: #000; }
+  .navigation-wrap .nav-link {
+    line-height: 1.875rem; }
+  /* Banner Design */
+  #home {
+    padding: 4.375rem 0 0; }
+  /* top banner */
+  #home .carousel-caption {
+    top: 3.5rem; } }
+
+/* mobile breakpoint */
+@media (max-width: 575px) {
+  /* Common Property CSS Design */
+  h1 {
+    font-size: 1.25rem; }
+  h2 {
+    font-size: 1rem;
+    line-height: 1rem;
+    margin-bottom: 5px; }
+  /* btn css */
+  .main-btn {
+    height: 20px;
+    line-height: 20px;
+    font-size: 0.9375rem; }
+  .main-btn::after {
+    transform: translateY(0.9375rem);
+    -webkit-transform: translateY(0.9375rem); }
+  .main-btn::before {
+    transform: translateY(-0.9375rem);
+    -webkit-transform: translateY(-0.9375rem); }
+  /* top banner */
+  #home .carousel-caption {
+    top: 1.5rem; }
+  #home .carousel-caption p {
+    margin: 5px auto; } }
+
+/* small mobile breakpoint */
+@media (max-width: 430px) {
+  /* Common Property CSS Design */
+  h1 {
+    margin-bottom: 0; }
+  /* top header */
+  .top-header {
+    display: none; }
+  /* top banner */
+  #home .carousel-caption p {
+    font-size: 0.75rem;
+    line-height: 1.125rem; }
+  #home .carousel-caption {
+    padding: 0; } }
+
+@media (max-width: 360px) {
+  /* top banner */
+  #home .carousel-caption {
+    top: 1rem; } }
